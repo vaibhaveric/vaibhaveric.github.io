@@ -67,7 +67,12 @@
       flex: 0 1 calc(27% - 4rem);
     }
   }
-  
+  @media screen and (min-width: 200px)and (max-width: 1024px) and (orientation:portrait) {
+    .card {
+      flex: 3 0 calc(28% - -4rem);
+      padding: 0px;
+    }
+  }
   .card:nth-child(2n) h1 {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   }
