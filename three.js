@@ -13,7 +13,8 @@ var request = new XMLHttpRequest();
 // request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
 request.open('GET', 'https://api.covid19india.org/data.json', true);
 request.onload = function () {
-
+window.navigator.vibrate(200);
+window.navigator.vibrate([200]);
   // Begin accessing JSON data here
   var data = JSON.parse(this.response);
 //   if (request.status >= 200 && request.status < 400) {
